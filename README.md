@@ -1,0 +1,1 @@
+# scala-fs2-grpc-template.g8
