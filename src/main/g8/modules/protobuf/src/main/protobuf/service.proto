@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package $package$.proto;
+
+option java_outer_classname = "EchoServiceProto";
+option java_package = "$package$.proto";
+option java_multiple_files = true;
+
+service EchoService {
+  rpc echo (EchoRequest) returns (EchoResponse) {}
+}
+
+message EchoRequest {
+  string message = 1;
+}
+
+message EchoResponse {
+  string original_message = 1;
+  string echo_message = 2;
+}
